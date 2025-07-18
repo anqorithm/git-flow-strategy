@@ -17,3 +17,9 @@ def test_multiply():
     assert calculator.multiply(4, 3) == 12
     assert calculator.multiply(-1, 3) == -3
     assert calculator.multiply(0, 100) == 0
+
+def test_divide():
+    calculator = Calculator()
+    assert calculator.divide(10, 2) == 5
+    assert calculator.divide(-6, 3) == -2
+    assert calculator.divide(0, 1) == 0

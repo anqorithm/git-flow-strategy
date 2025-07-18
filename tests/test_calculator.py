@@ -1,4 +1,5 @@
 from src.calculator import Calculator
+import pytest
 
 def test_add():
     calculator = Calculator()
@@ -23,3 +24,8 @@ def test_divide():
     assert calculator.divide(10, 2) == 5
     assert calculator.divide(-6, 3) == -2
     assert calculator.divide(0, 1) == 0
+
+def test_divide_by_zero():
+    calculator = Calculator()
+    with pytest.raises(ValueError):
+        calculator.divide(10, 0)

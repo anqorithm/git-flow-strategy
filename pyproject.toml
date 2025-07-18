@@ -1,0 +1,12 @@
+[project]
+name = "gitflowstrategy"
+version = "0.0.0"
+description = "This repo for "
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pytest",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

@@ -133,3 +133,7 @@ $ pytest tests/test_calculator.py -v
 **Note:**
 - For critical bugs found during release regression, create a `bugfix/release-*` branch from the release branch, fix, and merge back into the release branch. After release, merge the release branch into both `main` and `dev`.
 - For non-critical bugs, register the issue for the next sprint and do not fix in the release branch.
+
+## 9. GitFlow Graph
+
+![GitFlow Graph](assets/gitflow-graph.png)
